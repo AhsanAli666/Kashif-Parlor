@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kashaf Parlor | Luxury Beauty, Bridal and Hair Studio</title>
+<meta name="description" content="Bridal makeovers, hair therapy, glow facials and a curated luxury beauty boutique. Book your appointment at Kashaf Parlor.">
+<meta name="theme-color" content="#15120f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <a class="logo" href="#top">Kashaf <span>Parlor</span></a>
+  <nav id="menu" aria-label="Main"><a href="#shop">Shop</a><a href="#services">Services</a><a href="#book">Contact</a></nav>
+  <div class="nav__end">
+    <button class="cart" id="cartBtn" aria-label="Send your bag to WhatsApp">Bag <b id="cartCount">0</b></button>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO. To use a real photo, set --hero-photo in style.css -->
+  <section class="hero">
+    <div class="hero__copy">
+      <h1>Beauty worth taking your time over.</h1>
+      <p class="lead">Bridal artistry, restorative hair therapy and a hand-picked boutique of elite skincare, all under one roof.</p>
+      <div class="cta">
+        <a class="btn btn--gold" href="#book">Book an appointment</a>
+        <a class="btn btn--ghost" href="#shop">Browse the shop</a>
+      </div>
+    </div>
+    <figure class="hero__visual">
+      <div class="arch" role="img" aria-label="Hero image placeholder"></div>
+      <figcaption>Bridal season<span>Now booking</span></figcaption>
+    </figure>
+  </section>
+
+  <!-- SHOP: 10 products. data-price on each card drives the cart -->
+  <section class="section" id="shop">
+    <header class="head"><h2>The signature collection</h2><p>Ten essentials for skin, hair and finishing touches.</p></header>
+    <div class="grid">
+      <article class="card card--wide" data-price="8900"><div class="card__media"><img src="midnight-elixir-face-serum.jpg" alt="Midnight Elixir Face Serum" loading="lazy"><span class="badge">Face serum</span></div><div class="card__body"><h3>Midnight Elixir Face Serum</h3><p class="desc">A peptide-rich overnight serum that leaves skin rested and radiant by morning.</p><span class="price">Rs 8,900</span><button class="btn btn--add">Add to cart</button></div></article>
+      <article class="card" data-price="2400"><div class="card__media"><img src="rosewater-hydration-mist.jpg" alt="Rosewater Hydration Mist" loading="lazy"><span class="badge">Face mist</span></div><div class="card__body"><h3>Rosewater Hydration Mist</h3><span class="price">Rs 2,400</span><button class="btn btn--add">Add to cart</button></div></article>
+      <article class="card" data-price="4200"><div class="card__media"><img src="silk-infused-keratin-hair-mask.jpg" alt="Silk-Infused Keratin Hair Mask" loading="lazy"><span class="badge">Hair mask</span></div><div class="card__body"><h3>Silk-Infused Keratin Hair Mask</h3><span class="price">Rs 4,200</span><button class="btn btn--add">Add to cart</button></div></article>
+      <article class="card" data-price="3800"><div class="card__media"><img src="botanical-glow-cleansing-oil.jpg" alt="Botanical Glow Cleansing Oil" loading="lazy"><span class="badge">Cleanser</span></div><div class="card__body"><h3>Botanical Glow Cleansing Oil</h3><span class="price">Rs 3,800</span><button class="btn btn--add">Add to cart</button></div></article>
+      <article class="card" data-price="3200"><div class="card__media"><img src="radiant-complexion-bb-cream.jpg" alt="Radiant Complexion BB Cream (SPF 30)" loading="lazy"><span class="badge">BB cream</span></div><div class="card__body"><h3>Radiant Complexion BB Cream (SPF 30)</h3><span class="price">Rs 3,200</span><button class="btn btn--add">Add to cart</button></div></article>
+      <article class="card card--wide card--right" data-price="2900"><div class="card__media"><img src="velvet-matte-liquid-lipstick.jpg" alt="Velvet Matte Liquid Lipstick (Crimson Gold Edition)" loading="lazy"><span class="badge">Lip colour</span></div><div class="card__body"><h3>Velvet Matte Liquid Lipstick (Crimson Gold Edition)</h3><p class="desc">A rich, comfortable matte in a deep crimson made for evenings and celebrations.</p><span class="price">Rs 2,900</span><button class="btn btn--add">Add to cart</button></div></article>
+      <article class="card" data-price="5600"><div class="card__media"><img src="hydra-boost-peptide-eye-cream.jpg" alt="Hydra-Boost Peptide Eye Cream" loading="lazy"><span class="badge">Eye care</span></div><div class="card__body"><h3>Hydra-Boost Peptide Eye Cream</h3><span class="price">Rs 5,600</span><button class="btn btn--add">Add to cart</button></div></article>
+      <article class="card" data-price="2100"><div class="card__media"><img src="charcoal-detox-purifying-scrub.jpg" alt="Charcoal Detox Purifying Scrub" loading="lazy"><span class="badge">Face scrub</span></div><div class="card__body"><h3>Charcoal Detox Purifying Scrub</h3><span class="price">Rs 2,100</span><button class="btn btn--add">Add to cart</button></div></article>
+      <article class="card" data-price="2700"><div class="card__media"><img src="argan-oil-nourishing-shine-spray.jpg" alt="Argan Oil Nourishing Shine Spray" loading="lazy"><span class="badge">Hair shine</span></div><div class="card__body"><h3>Argan Oil Nourishing Shine Spray</h3><span class="price">Rs 2,700</span><button class="btn btn--add">Add to cart</button></div></article>
+      <article class="card" data-price="3500"><div class="card__media"><img src="luxury-jade-facial-roller-set.jpg" alt="Luxury Jade Facial Roller Set" loading="lazy"><span class="badge">Skin tool</span></div><div class="card__body"><h3>Luxury Jade Facial Roller Set</h3><span class="price">Rs 3,500</span><button class="btn btn--add">Add to cart</button></div></article>
+    </div>
+  </section>
+
+  <!-- SERVICES: three-column packages -->
+  <section class="section section--alt" id="services">
+    <header class="head"><h2>In-parlor services</h2><p>Every appointment starts with a private consultation.</p></header>
+    <div class="plans">
+      <article class="plan">
+        <h3>Hair Therapy</h3>
+        <p class="plan__price"><small>From</small> Rs 12,000</p>
+        <ul><li>Scalp and strand consultation</li><li>Keratin-infused deep treatment</li><li>Precision trim and blow-dry</li><li>Take-home care plan</li></ul>
+        <a class="btn btn--ghost" href="#book" data-service="Hair Therapy">Reserve hair therapy</a>
+      </article>
+      <article class="plan plan--feat">
+        <span class="ribbon">Signature</span>
+        <h3>Bridal Makeover</h3>
+        <p class="plan__price"><small>From</small> Rs 45,000</p>
+        <ul><li>Trial session before the big day</li><li>Full HD bridal makeup</li><li>Signature hairstyling</li><li>Skin prep and touch-up kit</li></ul>
+        <a class="btn btn--gold" href="#book" data-service="Bridal Makeover">Reserve bridal makeover</a>
+      </article>
+      <article class="plan">
+        <h3>Glow Facial</h3>
+        <p class="plan__price"><small>From</small> Rs 7,500</p>
+        <ul><li>Skin analysis</li><li>Deep cleanse and gentle exfoliation</li><li>Hydrating peptide mask</li><li>Jade-roller lifting massage</li></ul>
+        <a class="btn btn--ghost" href="#book" data-service="Glow Facial">Reserve glow facial</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<!-- CONTACT + BOOKING FORM (sends the request to WhatsApp) -->
+<footer class="foot" id="book">
+  <div class="foot__grid">
+    <div>
+      <h2>Reserve your chair</h2>
+      <p class="lead">Send your details and we will confirm your appointment on WhatsApp.</p>
+      <address>
+        <p><b>Studio</b> Your street address, City</p>
+        <p><b>Phone</b> <a href="tel:+920000000000">+92 000 0000000</a></p>
+        <p><b>Email</b> <a href="mailto:hello@kashafparlor.com">hello@kashafparlor.com</a></p>
+      </address>
+      <h3>Opening hours</h3>
+      <dl class="hours">
+        <div><dt>Monday to Thursday</dt><dd>10:00 am to 8:00 pm</dd></div>
+        <div><dt>Friday and Saturday</dt><dd>10:00 am to 10:00 pm</dd></div>
+        <div><dt>Sunday</dt><dd>By appointment</dd></div>
+      </dl>
+    </div>
+    <form class="form" id="bookForm">
+      <label>Full name<input name="name" required autocomplete="name" placeholder="Your name"></label>
+      <label>WhatsApp number<input name="phone" type="tel" required autocomplete="tel" placeholder="+92 3XX XXXXXXX"></label>
+      <label>Service<select name="service" id="service" required>
+        <option value="" disabled selected>Choose a service</option>
+        <option>Bridal Makeover</option><option>Hair Therapy</option><option>Glow Facial</option><option>Product enquiry</option>
+      </select></label>
+      <div class="two">
+        <label>Preferred date<input name="date" type="date" required></label>
+        <label>Preferred time<input name="time" type="time" required></label>
+      </div>
+      <label>Notes (optional)<textarea name="notes" rows="3" placeholder="Occasion, hair length, skin concerns"></textarea></label>
+      <button class="btn btn--gold" type="submit">Send request on WhatsApp</button>
+      <p class="hint" id="formMsg" role="status">This opens WhatsApp with your request ready to send.</p>
+    </form>
+  </div>
+  <p class="copy">&copy; <span id="yr">2026</span> Kashaf Parlor. All rights reserved.</p>
+</footer>
+
+<a class="wa" id="waFab" href="https://wa.me/" target="_blank" rel="noopener">WhatsApp us</a>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
